@@ -1,11 +1,12 @@
 Name:           yumdaemon
 Version:        0.9.2
-Release:        0.1.git20121109%{?dist}
+Release:        0.1.git20121109%{?dist}.1
 Summary:        Dbus daemon for yum package actions
 
 License:        GPLv2+
 URL:            https://github.com/timlau/yum-daemon
 Source0:        yumdaemon-%{version}.tar.gz
+Patch0:         korora.patch
 
 BuildArch:      noarch
 BuildRequires:  python2-devel
@@ -21,6 +22,7 @@ Dbus daemon for yum package actions
 
 %prep
 %setup -q
+%patch0 -p1
 
 
 %build
