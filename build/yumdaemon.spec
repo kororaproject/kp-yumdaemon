@@ -6,7 +6,7 @@ Summary:        Dbus daemon for yum package actions
 License:        GPLv2+
 URL:            https://github.com/timlau/yum-daemon
 Source0:        yumdaemon-%{version}.tar.gz
-Patch0:         korora.patch
+Patch0:         korora-cosmetic.patch
 
 BuildArch:      noarch
 BuildRequires:  python2-devel
