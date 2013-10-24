@@ -1,18 +1,13 @@
-diff --git a/policykit1/org.baseurl.Yum.policy b/policykit1/org.baseurl.Yum.policy
-index 4ea8da0..c42e893 100644
---- a/policykit1/org.baseurl.Yum.policy
-+++ b/policykit1/org.baseurl.Yum.policy
-@@ -7,10 +7,10 @@
+diff --git a/policykit1/org.baseurl.YumSystem.policy b/policykit1/org.baseurl.YumSystem.policy
+index 028d2d2..b1d198a 100644
+--- a/policykit1/org.baseurl.YumSystem.policy
++++ b/policykit1/org.baseurl.YumSystem.policy
+@@ -7,7 +7,7 @@
    <vendor_url>http://yum.baseurl.org/</vendor_url>
-   <action id="org.baseurl.Yum">
+   <action id="org.baseurl.YumSystem">
      <description>Yum</description>
 -    <message>Starting Yum backend with root access</message>
 +    <message>Application requesting yum to search/modify system packages.</message>
      <defaults>
        <allow_inactive>no</allow_inactive>
        <allow_active>auth_admin_keep</allow_active>
-     </defaults>
-   </action>
--</policyconfig>
-\ No newline at end of file
-+</policyconfig>
