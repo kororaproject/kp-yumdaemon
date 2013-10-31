@@ -1,12 +1,11 @@
 Name:           yumdaemon
 Version:        0.9.2
-Release:        5%{?dist}.1
+Release:        5%{?dist}
 Summary:        DBus daemon for yum package actions
 
 License:        GPLv2+
 URL:            https://github.com/timlau/yum-daemon
 Source0:        https://fedorahosted.org/releases/y/u/yumex/%{name}-%{version}.tar.gz
-Patch0:         korora-cosmetic.patch
 
 BuildArch:      noarch
 BuildRequires:  python2-devel
@@ -22,7 +21,6 @@ Dbus daemon for yum package actions
 
 %prep
 %setup -q
-%patch0 -p1
 
 
 %build
